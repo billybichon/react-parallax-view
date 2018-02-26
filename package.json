@@ -1,0 +1,12 @@
+{
+  "name": "package-view",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Billy Bichon <billy.bichon06@gmail.com>",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
