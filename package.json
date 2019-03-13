@@ -8,5 +8,9 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billybichon/react-parallax-view.git"
   }
 }
