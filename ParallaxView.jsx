@@ -32,12 +32,16 @@ class ParallaxView extends React.Component {
             transform: `translate(${x}px, ${y}px)`,
         };
 
-        if (this.props && React.Children.count(this.props.children) === 1) {
-            return React.cloneElement(React.Children.only(this.props.children), {
+        if (typeof this.props.children  !== 'string' && React.Children.only(this.props.children)) {
+            const childStyle = this.props.children.props.style;
+            return React.cloneElement(this.props.children, {
                 ref: (el) => {
                     this.ref = el;
                 },
-                style
+                style: {
+                    ... style,
+                    ... childStyle
+                }
             });
         }
         else {
